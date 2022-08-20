@@ -197,7 +197,7 @@ header {
 }
 
 #carouselSlider {
-  padding-bottom: 1rem;
+  padding: 0;
   overflow: hidden;
   margin: 0;
 }
@@ -218,28 +218,31 @@ header {
   justify-content: center;
   align-items: center;
 
-  transition: all 1500ms ease-in-out;
+  transition: all 1500ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 
 /* ANIMATIONS */
 .item-1 {
   margin-top: 7rem;
-  animation: slide1 45s ease infinite;
+  animation: slide1 49s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite;
 }
 .item-2 {
-  animation: slide2 45s ease infinite;
+  animation: slide2 49s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite;
 }
 .item-3 {
-  animation: slide3 45s ease infinite;
+  animation: slide3 49s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite;
 }
 .item-4 {
-  animation: slide4 45s ease infinite;
+  animation: slide4 49s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite;
 }
 .item-5 {
-  animation: slide5 45s ease infinite;
+  animation: slide5 49s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite;
 }
 .item-6 {
-  animation: slide6 45s ease infinite;
+  animation: slide6 49s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite;
+}
+.item-7 {
+  animation: slide7 49s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite;
 }
 
 @keyframes slide1 {
@@ -250,23 +253,27 @@ header {
   7% {
     opacity: 1;
   }
-  16.66% {
+  14.286% {
     visibility: visible;
     opacity: 1;
   }
-  33.32% {
+  28.572% {
     visibility: hidden;
     opacity: 0;
   }
-  50% {
+  42.858% {
     visibility: hidden;
     opacity: 0;
   }
-  66.66% {
+  57.144% {
     visibility: hidden;
     opacity: 0;
   }
-  83.32% {
+  71.43% {
+    visibility: hidden;
+    opacity: 0;
+  }
+  85.716% {
     visibility: hidden;
     opacity: 0;
   }
@@ -280,23 +287,27 @@ header {
     visibility: hidden;
     opacity: 0;
   }
-  16.66% {
+  14.286% {
     visibility: hidden;
     opacity: 0;
   }
-  33.32% {
+  28.572% {
     visibility: visible;
     opacity: 1;
   }
-  50% {
+  42.858% {
     visibility: hidden;
     opacity: 0;
   }
-  66.66% {
+  57.144% {
     visibility: hidden;
     opacity: 0;
   }
-  83.32% {
+  71.43% {
+    visibility: hidden;
+    opacity: 0;
+  }
+  85.716% {
     visibility: hidden;
     opacity: 0;
   }
@@ -310,23 +321,27 @@ header {
     visibility: hidden;
     opacity: 0;
   }
-  16.66% {
+  14.286% {
     visibility: hidden;
     opacity: 0;
   }
-  33.32% {
+  28.572% {
     visibility: hidden;
     opacity: 0;
   }
-  50% {
+  42.858% {
     visibility: visible;
     opacity: 1;
   }
-  66.66% {
+  57.144% {
     visibility: hidden;
     opacity: 0;
   }
-  83.32% {
+  71.43% {
+    visibility: hidden;
+    opacity: 0;
+  }
+  85.716% {
     visibility: hidden;
     opacity: 0;
   }
@@ -340,23 +355,27 @@ header {
     visibility: hidden;
     opacity: 0;
   }
-  16.66% {
+  14.286% {
     visibility: hidden;
     opacity: 0;
   }
-  33.32% {
+  28.572% {
     visibility: hidden;
     opacity: 0;
   }
-  50% {
+  42.858% {
     visibility: hidden;
     opacity: 0;
   }
-  66.66% {
+  57.144% {
     visibility: visible;
     opacity: 1;
   }
-  83.32% {
+  71.43% {
+    visibility: hidden;
+    opacity: 0;
+  }
+  85.716% {
     visibility: hidden;
     opacity: 0;
   }
@@ -370,25 +389,29 @@ header {
     visibility: hidden;
     opacity: 0;
   }
-  16.66% {
+  14.286% {
     visibility: hidden;
     opacity: 0;
   }
-  33.32% {
+  28.572% {
     visibility: hidden;
     opacity: 0;
   }
-  50% {
+  42.858% {
     visibility: hidden;
     opacity: 0;
   }
-  66.66% {
+  57.144% {
     visibility: hidden;
     opacity: 0;
   }
-  83.32% {
+  71.43% {
     visibility: visible;
     opacity: 1;
+  }
+  85.716% {
+    visibility: hidden;
+    opacity: 0;
   }
   100% {
     visibility: hidden;
@@ -400,23 +423,61 @@ header {
     visibility: hidden;
     opacity: 0;
   }
-  16.66% {
+  14.286% {
     visibility: hidden;
     opacity: 0;
   }
-  33.32% {
+  28.572% {
     visibility: hidden;
     opacity: 0;
   }
-  50% {
+  42.858% {
     visibility: hidden;
     opacity: 0;
   }
-  66.66% {
+  57.144% {
     visibility: hidden;
     opacity: 0;
   }
-  83.32% {
+  71.43% {
+    visibility: hidden;
+    opacity: 0;
+  }
+  85.716% {
+    visibility: visible;
+    opacity: 1;
+  }
+  100% {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+@keyframes slide7 {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+  }
+  14.286% {
+    visibility: hidden;
+    opacity: 0;
+  }
+  28.572% {
+    visibility: hidden;
+    opacity: 0;
+  }
+  42.858% {
+    visibility: hidden;
+    opacity: 0;
+  }
+  57.144% {
+    visibility: hidden;
+    opacity: 0;
+  }
+  71.43% {
+    visibility: hidden;
+    opacity: 0;
+  }
+  85.716% {
     visibility: hidden;
     opacity: 0;
   }
